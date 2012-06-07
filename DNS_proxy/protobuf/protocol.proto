@@ -1,0 +1,29 @@
+//henglinli@gmail.com 2012-06-06
+package dns_proxy;
+//Some engineers at Google have come to the conclusion that using required
+//does more harm than good; they prefer to use only optional and repeated.
+//ipv4
+message ipv4_t {
+  //the Preferred ip is counts%(index++)
+  required uint32 index = 2 [default = 0];
+  repeated string ipv4 = 3;
+}
+//ipv6
+message ipv6_t {
+  //the Preferred ip is counts%(index++)
+  required uint32 index = 2 [default = 0];
+  repeated string ipv6str = 3;
+}
+//dns
+message dns_record {
+  required string host = 1 [default = "localhost"];
+  //ipv4
+  required ipv4_t ipv4 = 2;
+  repeated ipv6_t ipv6 = 3;
+  //alias
+  repeated string alias = 4;
+}
+//block list
+message blocklist {
+  repeated string host = 1;
+}

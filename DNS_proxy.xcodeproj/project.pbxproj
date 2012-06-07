@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B4951791580A85B00FA4CCD /* resolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B4951771580A85B00FA4CCD /* resolver.cpp */; };
+		9BB617CE1580860600C78F29 /* dns.h in Sources */ = {isa = PBXBuildFile; fileRef = 9BB617CC1580735D00C78F29 /* dns.h */; };
+		9BB617CF1580860900C78F29 /* dns.h in Sources */ = {isa = PBXBuildFile; fileRef = 9BB617CC1580735D00C78F29 /* dns.h */; };
+		9BB617D3158087EC00C78F29 /* record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BB617D1158087EC00C78F29 /* record.cpp */; };
+		9BD06767157DE61200BCD41E /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BD06766157DE61200BCD41E /* server.cpp */; };
+		9BD0678C157E455000BCD41E /* clientc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0678B157E455000BCD41E /* clientc.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9BD06760157DE61200BCD41E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9BD0677C157E429A00BCD41E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9B4951771580A85B00FA4CCD /* resolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resolver.cpp; sourceTree = "<group>"; };
+		9B4951781580A85B00FA4CCD /* resolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resolver.h; sourceTree = "<group>"; };
+		9BB617CC1580735D00C78F29 /* dns.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dns.h; sourceTree = "<group>"; };
+		9BB617D1158087EC00C78F29 /* record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = record.cpp; sourceTree = "<group>"; };
+		9BB617D2158087EC00C78F29 /* record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = record.h; sourceTree = "<group>"; };
+		9BC62135157FA48200A8562D /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		9BC62136157FA48200A8562D /* protocol.pb.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = protocol.pb.cc; sourceTree = "<group>"; };
+		9BC62137157FA48200A8562D /* protocol.pb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = protocol.pb.h; sourceTree = "<group>"; };
+		9BC62138157FA48200A8562D /* protocol.proto */ = {isa = PBXFileReference; lastKnownFileType = text; path = protocol.proto; sourceTree = "<group>"; };
+		9BC6213A157FA5E800A8562D /* oprecord.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = oprecord.cc; sourceTree = "<group>"; };
+		9BD06762157DE61200BCD41E /* DNS_proxy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DNS_proxy; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD06766157DE61200BCD41E /* server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
+		9BD06770157DE67500BCD41E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		9BD06772157DFCA000BCD41E /* client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = client.cpp; sourceTree = "<group>"; };
+		9BD06778157E0BD800BCD41E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		9BD0677E157E429A00BCD41E /* client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = client; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD0678B157E455000BCD41E /* clientc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clientc.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BD0675F157DE61200BCD41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD0677B157E429A00BCD41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BC62134157FA48200A8562D /* protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				9BC62135157FA48200A8562D /* Makefile */,
+				9BC62136157FA48200A8562D /* protocol.pb.cc */,
+				9BC62137157FA48200A8562D /* protocol.pb.h */,
+				9BC62138157FA48200A8562D /* protocol.proto */,
+			);
+			path = protobuf;
+			sourceTree = "<group>";
+		};
+		9BD06757157DE61200BCD41E = {
+			isa = PBXGroup;
+			children = (
+				9BD06765157DE61200BCD41E /* DNS_proxy */,
+				9BD06763157DE61200BCD41E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BD06763157DE61200BCD41E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BD06762157DE61200BCD41E /* DNS_proxy */,
+				9BD0677E157E429A00BCD41E /* client */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BD06765157DE61200BCD41E /* DNS_proxy */ = {
+			isa = PBXGroup;
+			children = (
+				9BD06778157E0BD800BCD41E /* Makefile */,
+				9BB617CC1580735D00C78F29 /* dns.h */,
+				9BB617D2158087EC00C78F29 /* record.h */,
+				9BB617D1158087EC00C78F29 /* record.cpp */,
+				9B4951771580A85B00FA4CCD /* resolver.cpp */,
+				9B4951781580A85B00FA4CCD /* resolver.h */,
+				9BD06766157DE61200BCD41E /* server.cpp */,
+				9BD06772157DFCA000BCD41E /* client.cpp */,
+				9BC62134157FA48200A8562D /* protobuf */,
+				9BD06770157DE67500BCD41E /* README */,
+				9BD0678B157E455000BCD41E /* clientc.c */,
+				9BC6213A157FA5E800A8562D /* oprecord.cc */,
+			);
+			path = DNS_proxy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BD06761157DE61200BCD41E /* DNS_proxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD0676C157DE61200BCD41E /* Build configuration list for PBXNativeTarget "DNS_proxy" */;
+			buildPhases = (
+				9BD0675E157DE61200BCD41E /* Sources */,
+				9BD0675F157DE61200BCD41E /* Frameworks */,
+				9BD06760157DE61200BCD41E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DNS_proxy;
+			productName = DNS_proxy;
+			productReference = 9BD06762157DE61200BCD41E /* DNS_proxy */;
+			productType = "com.apple.product-type.tool";
+		};
+		9BD0677D157E429A00BCD41E /* client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD06785157E429B00BCD41E /* Build configuration list for PBXNativeTarget "client" */;
+			buildPhases = (
+				9BD0677A157E429A00BCD41E /* Sources */,
+				9BD0677B157E429A00BCD41E /* Frameworks */,
+				9BD0677C157E429A00BCD41E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = client;
+			productName = client;
+			productReference = 9BD0677E157E429A00BCD41E /* client */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BD06759157DE61200BCD41E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Henry Lee";
+			};
+			buildConfigurationList = 9BD0675C157DE61200BCD41E /* Build configuration list for PBXProject "DNS_proxy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9BD06757157DE61200BCD41E;
+			productRefGroup = 9BD06763157DE61200BCD41E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BD06761157DE61200BCD41E /* DNS_proxy */,
+				9BD0677D157E429A00BCD41E /* client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BD0675E157DE61200BCD41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD06767157DE61200BCD41E /* server.cpp in Sources */,
+				9BB617CF1580860900C78F29 /* dns.h in Sources */,
+				9BB617D3158087EC00C78F29 /* record.cpp in Sources */,
+				9B4951791580A85B00FA4CCD /* resolver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD0677A157E429A00BCD41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD0678C157E455000BCD41E /* clientc.c in Sources */,
+				9BB617CE1580860600C78F29 /* dns.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9BD0676A157DE61200BCD41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9BD0676B157DE61200BCD41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9BD0676D157DE61200BCD41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9BD0676E157DE61200BCD41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9BD06786157E429B00BCD41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9BD06787157E429B00BCD41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BD0675C157DE61200BCD41E /* Build configuration list for PBXProject "DNS_proxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD0676A157DE61200BCD41E /* Debug */,
+				9BD0676B157DE61200BCD41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD0676C157DE61200BCD41E /* Build configuration list for PBXNativeTarget "DNS_proxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD0676D157DE61200BCD41E /* Debug */,
+				9BD0676E157DE61200BCD41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD06785157E429B00BCD41E /* Build configuration list for PBXNativeTarget "client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD06786157E429B00BCD41E /* Debug */,
+				9BD06787157E429B00BCD41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BD06759157DE61200BCD41E /* Project object */;
+}

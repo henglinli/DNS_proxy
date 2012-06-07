@@ -1,0 +1,25 @@
+Overview:
+    DNS_proxy--leveldb cacahed DNS proxy server.
+    DNS_proxy read DNS message form trusted DNS server and cached in it's
+    leveldb.
+    
+Fuctions:
+    1, DNS cache;
+    2, DNS block list(structed, not implement)
+    3, ip load balance.
+    
+Dependencies:
+    systems: *nux based and clang 4.0 or later(maybe gcc 4.2 or later)
+             common unix compile tools. 
+            
+    leveldb: Release 1.2 2011-05-16
+             http://code.google.com/p/leveldb/
+    boost:   Version 1.49.0
+             http://www.boost.org/
+    Protocol Buffers:
+             Vsersion 2.4.1
+             http://code.google.com/p/protobuf/
+
+
+    
+    
