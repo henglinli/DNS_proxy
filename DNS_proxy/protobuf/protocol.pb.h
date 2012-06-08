@@ -35,6 +35,7 @@ void protobuf_ShutdownFile_protocol_2eproto();
 class ipv4_t;
 class ipv6_t;
 class dns_record;
+class blocklist;
 
 // ===================================================================
 
@@ -362,6 +363,95 @@ class dns_record : public ::google::protobuf::Message {
   void InitAsDefaultInstance();
   static dns_record* default_instance_;
 };
+// -------------------------------------------------------------------
+
+class blocklist : public ::google::protobuf::Message {
+ public:
+  blocklist();
+  virtual ~blocklist();
+  
+  blocklist(const blocklist& from);
+  
+  inline blocklist& operator=(const blocklist& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+  
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+  
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const blocklist& default_instance();
+  
+  void Swap(blocklist* other);
+  
+  // implements Message ----------------------------------------------
+  
+  blocklist* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const blocklist& from);
+  void MergeFrom(const blocklist& from);
+  void Clear();
+  bool IsInitialized() const;
+  
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  
+  ::google::protobuf::Metadata GetMetadata() const;
+  
+  // nested types ----------------------------------------------------
+  
+  // accessors -------------------------------------------------------
+  
+  // repeated string host = 1;
+  inline int host_size() const;
+  inline void clear_host();
+  static const int kHostFieldNumber = 1;
+  inline const ::std::string& host(int index) const;
+  inline ::std::string* mutable_host(int index);
+  inline void set_host(int index, const ::std::string& value);
+  inline void set_host(int index, const char* value);
+  inline void set_host(int index, const char* value, size_t size);
+  inline ::std::string* add_host();
+  inline void add_host(const ::std::string& value);
+  inline void add_host(const char* value);
+  inline void add_host(const char* value, size_t size);
+  inline const ::google::protobuf::RepeatedPtrField< ::std::string>& host() const;
+  inline ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_host();
+  
+  // @@protoc_insertion_point(class_scope:dns_proxy.blocklist)
+ private:
+  
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+  
+  ::google::protobuf::RepeatedPtrField< ::std::string> host_;
+  
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+  
+  friend void  protobuf_AddDesc_protocol_2eproto();
+  friend void protobuf_AssignDesc_protocol_2eproto();
+  friend void protobuf_ShutdownFile_protocol_2eproto();
+  
+  void InitAsDefaultInstance();
+  static blocklist* default_instance_;
+};
 // ===================================================================
 
 
@@ -663,6 +753,54 @@ dns_record::alias() const {
 inline ::google::protobuf::RepeatedPtrField< ::std::string>*
 dns_record::mutable_alias() {
   return &alias_;
+}
+
+// -------------------------------------------------------------------
+
+// blocklist
+
+// repeated string host = 1;
+inline int blocklist::host_size() const {
+  return host_.size();
+}
+inline void blocklist::clear_host() {
+  host_.Clear();
+}
+inline const ::std::string& blocklist::host(int index) const {
+  return host_.Get(index);
+}
+inline ::std::string* blocklist::mutable_host(int index) {
+  return host_.Mutable(index);
+}
+inline void blocklist::set_host(int index, const ::std::string& value) {
+  host_.Mutable(index)->assign(value);
+}
+inline void blocklist::set_host(int index, const char* value) {
+  host_.Mutable(index)->assign(value);
+}
+inline void blocklist::set_host(int index, const char* value, size_t size) {
+  host_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* blocklist::add_host() {
+  return host_.Add();
+}
+inline void blocklist::add_host(const ::std::string& value) {
+  host_.Add()->assign(value);
+}
+inline void blocklist::add_host(const char* value) {
+  host_.Add()->assign(value);
+}
+inline void blocklist::add_host(const char* value, size_t size) {
+  host_.Add()->assign(reinterpret_cast<const char*>(value), size);
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+blocklist::host() const {
+  return host_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+blocklist::mutable_host() {
+  return &host_;
 }
 
 
