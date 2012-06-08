@@ -20,6 +20,51 @@ Dependencies:
              Vsersion 2.4.1
              http://code.google.com/p/protobuf/
 
+Installation:
+	Simple Way:
+		    just run "cd DNS_proxy && make", and geted
+	            1, server--DNS_proxy server.
+		    2, client--DNS_proxy client, 
+		       maybe another system canbe client, see "Step way".
+		    3, oprecord--DNS_proxy record editor.
+        Step Way:
+	       	    1, folder structure
+		   
+		    README --		
+    		    DNS_proxy.xcodeproj -- Xcode project file, i just use xcode 
+		    			   edit source,so it is not work.
+		    DNS_proxy -- source file and more			    
+    		       |
+		       |\ Makefile -- CXX CC and stdlib  must be same of when 
+		       |	      compile dependcies uesd.
+		       |	      if your google tools and boost isn't in
+		       |	      regular path, you may set GTOOLS and BOOST
+	               |\ dnsdb -- just DNS cacahe, can ignore.
+		       |\ protobuf -- I just protoc cpp files, they may work
+		       |     |	      (I don't Know the internal os protobuf).
+		       |     |      if not, set protoc your cpp files by SET  
+		       |     |	      PROTOC_BIN in the Makefile, and make.
+		       |     |\ Makefile --
+		       |     |\ protocol.proto -- dns_record definition
+		       |     |\ protocol.pb.h & protocol.pb.cc --
+		       |	     	    output files of protoc
+		       |\ *.h & *.cpp -- sources 
+		    
+   		    2, source dependencies
+		       !! define: --> is need
+		    
+		       A: server --> server.cpp
+		       	    |\--> record.cpp --> protocol.pb.cc --> protobuf
+			    |       \--> leveldb
+			     \--> resovler.cpp --> boost(aiso, uuid and others)
 
-    
-    
+		       B: client --> client.cpp
+		       	    \--> resovler.cpp
+			    
+		       C: oprecord --> oprecord.cpp
+		       	     \--> record.cpp
+
+                    3, Now just CXX the source 
+		       or write your Makefile or CMakeLists.txt
+		       
+                    4, contact henglinli@gami.com :)
